@@ -20,6 +20,7 @@ function Addjob(){
       body:JSON.stringify(newJobs)
     })
     alert("form submitted")
+    console.log("Submitted")
 
 }
   return(
