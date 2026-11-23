@@ -1,0 +1,397 @@
+body {
+  background-color: #eef2f7;
+}
+.dark-mode{
+  background-color: black;
+  color:white
+}
+.light-mode{
+  background-color: white;
+  color:black;
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 18px 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Navbar links */
+.navbar a {
+  text-decoration: none;
+  color: #475569;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+/* Hover effect */
+.navbar a:hover {
+  background-color: #eff6ff;
+  color: #2563eb;
+}
+
+/* Active link */
+.navbar a.active {
+  background-color: #2563eb;
+  color: white;
+}
+
+.main-div{
+  display: inline-block;
+}
+
+/* Job Cards Container */
+.job-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 30px 20px;
+  background-color: #f8fafc;
+}
+
+/* Individual Job Card */
+.job-card {
+  box-sizing: border-box;
+  width: 280px;
+  padding: 25px;
+  margin: 0;
+
+  background: linear-gradient(145deg, #ffffff, #f8fbff);
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+
+  box-shadow: 0 5px 18px rgba(15, 23, 42, 0.06);
+
+  text-align: left;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+/* Card Hover Effect */
+.job-card:hover {
+  transform: translateY(-6px);
+  border-color: #93c5fd;
+  box-shadow: 0 14px 30px rgba(37, 99, 235, 0.12);
+}
+
+/* Job Headings */
+.job-card h3 {
+  margin: 16px 0 5px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+/* First Heading */
+.job-card h3:first-child {
+  margin-top: 0;
+}
+
+/* Job Details */
+.job-card p {
+  margin: 0 0 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  color: #1e293b;
+}
+
+/* Apply Button */
+.job-card button {
+  width: 100%;
+  padding: 12px 16px;
+  margin-top: 18px;
+
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+  color: #ffffff;
+
+  border: none;
+  border-radius: 9px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+/* Button Hover */
+.job-card button:hover {
+  background: linear-gradient(135deg, #1d4ed8, #4338ca);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(37, 99, 235, 0.25);
+}
+
+/* Keyboard Accessibility */
+.job-card button:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 3px;
+}
+
+/* Button Click */
+.job-card button:active {
+  transform: translateY(0);
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .job-container {
+    gap: 16px;
+    padding: 20px 12px;
+  }
+
+  .job-card {
+    width: 100%;
+    max-width: 360px;
+    padding: 22px;
+  }
+}
+
+
+
+/* .job-container {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.job-card {
+  border: 2px solid #dbe2ea;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin: 10px;
+  width: 250px;
+  vertical-align: top;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+}
+.job-card h3 {
+  margin: 8px 0 2px;
+  font-size: 14px;
+  color: #6b7280;
+}
+.job-card p {
+  margin: 0 0 10px;
+  font-size: 17px;
+}
+.job-card button {
+  width: 100%;
+  padding: 11px;
+  margin-top: 10px;
+
+  background-color: #2563eb;
+  color: white;
+
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  cursor: pointer;
+}.job-card button:hover{
+ background-color: #1d4ed8;
+} */
+
+/* Login Page */
+.login {
+  width: 100%;
+  max-width: 420px;
+  box-sizing: border-box;
+  margin: 50px auto;
+  padding: 35px;
+
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.10);
+
+  font-family: Arial, sans-serif;
+}
+
+/* Form Heading Labels */
+.login h4 {
+  margin: 18px 0 8px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.login h4:first-child {
+  margin-top: 0;
+}
+
+/* Input Fields */
+.login input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 14px;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+
+  background-color: #f8fafc;
+  color: #1e293b;
+
+  font-size: 15px;
+  outline: none;
+
+  transition: border-color 0.2s ease, box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+/* Input Focus */
+.login input:focus {
+  border-color: #6366f1;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.12);
+}
+
+/* Placeholder */
+.login input::placeholder {
+  color: #94a3b8;
+}
+
+/* All Buttons */
+.login button {
+  padding: 11px 15px;
+  margin: 10px 6px 0 0;
+
+  border: none;
+  border-radius: 9px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+/* Submit Button */
+.login .submit {
+  width: 100%;
+  margin-top: 24px;
+  padding: 13px;
+
+  background: linear-gradient(135deg, #2563eb, #6366f1);
+  color: white;
+}
+
+.login .submit:hover {
+  background: linear-gradient(135deg, #1d4ed8, #4f46e5);
+  box-shadow: 0 6px 15px rgba(79, 70, 229, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Reset Button */
+.login .reset {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.login .reset:hover {
+  background-color: #fecaca;
+}
+
+/* Save Name Button */
+.login .savedata {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.login .savedata:hover {
+  background-color: #bbf7d0;
+}
+
+/* View Data Button */
+.login .viewdata {
+  background-color: #e0e7ff;
+  color: #3730a3;
+}
+
+.login .viewdata:hover {
+  background-color: #c7d2fe;
+}
+
+/* Form Messages */
+.login p {
+  color: #64748b;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.login button:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 3px;
+}
+
+/* Success Message */
+.login h4:last-child {
+  overflow-wrap: anywhere;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .login {
+    width: calc(100% - 28px);
+    margin: 25px auto;
+    padding: 24px;
+  }
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 30px;
+}
+.search-bar {
+  display: block;
+  width: 500px;
+  height: 45px;
+  margin: 10px auto;
+  margin-left:200px;
+  padding: 0 15px;
+  font-size: 18px;
+  
+}
+.select-city{
+  display:flex;
+  height:30px;
+  width:150px;
+  margin:18px auto;
+  border: 2px solid #d1d5db;
+  background-color: white;
+}
+
+.work-type{
+  display:flex;
+  height:30px;
+  width:150px;
+  margin:18px auto;
+  border: 2px solid #d1d5db;
+  background-color: white;
+}
+.active{
+  color:red;
+}
